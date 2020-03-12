@@ -8,7 +8,7 @@
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "types": "tsc --noEmit",
-    "stylelint": "stylelint ./**/*.scss"
+    "stylelint": "stylelint ./src/**/*.scss"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,49 @@
+@import '../../../src/styles/base';
+
+.styleguide-typography {
+  &__type-style {
+    padding: 20px;
+  }
+
+  &__type-style-header {
+    align-items: baseline;
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 4px 10px;
+  }
+
+  &__type-style-name {
+    color: #b9b9b9;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+
+  &__type-style-code {
+    color: #e46431;
+    font-family: monospace;
+    margin-left: 15px;
+  }
+
+  &__type-style-example {
+    border: 1px solid #eee;
+    border-top: 0;
+    padding: 50px;
+
+    &--atlanta {
+      @include type-style-atlanta;
+    }
+
+    &--chicago {
+      @include type-style-chicago;
+    }
+
+    &--new-york {
+      @include type-style-new-york;
+    }
+
+    &--san-francisco {
+      @include type-style-san-francisco;
+    }
+  }
+}

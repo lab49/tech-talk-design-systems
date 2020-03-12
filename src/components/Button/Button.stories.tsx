@@ -5,7 +5,7 @@ import { Button } from './Button';
 
 // eslint-disable-next-line import/no-default-export
 export default {
-  title: 'Base Components/Button',
+  title: 'Base Components|Button',
   decorators: [withKnobs],
 };
 
