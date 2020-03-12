@@ -1,3 +1,11 @@
 import React from 'react';
 
-export const Button = () => <button>button</button>;
+import './_button.scss';
+
+interface Props {
+  children: React.ReactNode;
+}
+
+const baseClass = 'button';
+
+export const Button = ({ children }: Props) => <button className={baseClass}>{children}</button>;
