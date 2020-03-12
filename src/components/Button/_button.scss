@@ -1,3 +1,70 @@
+@import '../../styles/base';
+
 .button {
-  background: red;
+  $default-box-shadow: 0 1px 2px 0 rgba(map-get($colors, sun), 0.2);
+
+  @include type-style-new-york;
+
+  background-color: map-get($colors, earth);
+  border: 0;
+  border-radius: 2px;
+  box-shadow: $default-box-shadow;
+  color: map-get($colors, sun);
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 25px;
+  transition: 0.1s ease-in-out;
+  transition-property: background-color, box-shadow;
+
+  &:hover {
+    background-color: darken(map-get($colors, earth), 5%);
+  }
+
+  &:focus {
+    box-shadow: $default-box-shadow, inset 0 0 0 2px darken(map-get($colors, earth), 15%);
+    outline: 0;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &--size-small {
+    @include type-style-san-francisco;
+
+    padding: 5px 15px;
+  }
+
+  &--size-large {
+    padding: 15px 30px;
+  }
+
+  &--intent-primary {
+    background-color: map-get($colors, mercury);
+    color: map-get($colors, venus);
+
+    &:hover {
+      background-color: darken(map-get($colors, mercury), 5%);
+    }
+
+    &:focus {
+      box-shadow: $default-box-shadow, inset 0 0 0 2px darken(map-get($colors, mercury), 15%);
+      outline: 0;
+    }
+  }
+
+  &--intent-danger {
+    background-color: map-get($colors, mars);
+    color: map-get($colors, venus);
+
+    &:hover {
+      background-color: darken(map-get($colors, mars), 5%);
+    }
+
+    &:focus {
+      box-shadow: $default-box-shadow, inset 0 0 0 2px darken(map-get($colors, mars), 15%);
+      outline: 0;
+    }
+  }
 }
