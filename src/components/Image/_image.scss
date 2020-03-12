@@ -1,0 +1,33 @@
+.image {
+  $this: &;
+  $border-radius: 10px;
+
+  &__wrapper {
+    border-radius: $border-radius;
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+    width: 100%;
+  }
+
+  &__inner-wrapper {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    position: static;
+    width: 100%;
+  }
+
+  &--orientation-portrait {
+    #{$this}__wrapper {
+      padding-bottom: 133%;
+    }
+  }
+}
