@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ./src",
+    "start": "npm run storybook",
     "storybook": "start-storybook",
     "stylelint": "stylelint ./src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1",
