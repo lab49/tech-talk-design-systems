@@ -1,0 +1,42 @@
+@import '../../styles/base';
+
+.callout {
+  $this: &;
+
+  background-color: map-get($colors, earth);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 30px;
+
+  &__title {
+    @include type-style-new-york;
+
+    margin: 0 0 10px;
+  }
+
+  &__text {
+    @include type-style-san-francisco;
+
+    margin: 0;
+  }
+
+  &--intent-primary {
+    background-color: lighten(map-get($colors, mercury), 45%);
+
+    #{$this} {
+      &__title {
+        color: map-get($colors, mercury);
+      }
+    }
+  }
+
+  &--intent-danger {
+    background-color: lighten(map-get($colors, mars), 40%);
+
+    #{$this} {
+      &__title {
+        color: map-get($colors, mars);
+      }
+    }
+  }
+}
