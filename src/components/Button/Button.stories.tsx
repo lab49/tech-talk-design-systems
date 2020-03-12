@@ -1,10 +1,20 @@
 import React from 'react';
-// import { Button } from '@storybook/react/demo';
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+
 import { Button } from './Button';
 
-export default { title: 'Base Components/Button' };
+export default {
+  title: 'Base Components/Button',
+  decorators: [withKnobs],
+};
 
-export const withText = () => <Button>Hello Button</Button>;
+export const withText = () => {
+  const buttonText = text('Text', 'Hello world!');
+
+  return (
+    <Button>{buttonText}</Button>
+  );
+};
 
 export const withEmoji = () => (
   <Button>

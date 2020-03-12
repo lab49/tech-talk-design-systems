@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/brianmcallister/lab49-tech-talk-design-systems#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
@@ -27,6 +28,9 @@
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
     "@storybook/react": "^5.3.14",
     "@types/events": "^3.0.0",
     "babel-loader": "^8.0.6",
