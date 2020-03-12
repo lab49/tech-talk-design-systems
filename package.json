@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "storybook": "start-storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/brianmcallister/lab49-tech-talk-design-systems/issues"
   },
-  "homepage": "https://github.com/brianmcallister/lab49-tech-talk-design-systems#readme"
+  "homepage": "https://github.com/brianmcallister/lab49-tech-talk-design-systems#readme",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-typescript": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@storybook/react": "^5.3.14",
+    "@types/events": "^3.0.0",
+    "babel-loader": "^8.0.6",
+    "typescript": "^3.8.3"
+  }
 }
