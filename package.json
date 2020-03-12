@@ -1,0 +1,19 @@
+{
+  "name": "lab49-tech-talk-design-systems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianmcallister/lab49-tech-talk-design-systems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianmcallister/lab49-tech-talk-design-systems/issues"
+  },
+  "homepage": "https://github.com/brianmcallister/lab49-tech-talk-design-systems#readme"
+}
