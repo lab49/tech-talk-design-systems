@@ -1,0 +1,23 @@
+@import '../../styles/base';
+
+.photo-card {
+  position: relative;
+
+  &__title {
+    @include type-style-new-york;
+
+    margin: 15px 0 5px;
+  }
+
+  &__subtitle {
+    @include type-style-san-francisco;
+
+    margin: 0;
+  }
+
+  &__like-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}

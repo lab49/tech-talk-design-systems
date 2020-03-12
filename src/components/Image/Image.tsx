@@ -31,4 +31,4 @@ export const Image = ({ img, orientation }: Props) => {
       </div>
     </div>
   );
-}
+};

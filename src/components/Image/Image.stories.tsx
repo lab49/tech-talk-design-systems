@@ -1,5 +1,5 @@
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 import React from 'react';
-import { withKnobs, text, boolean, number, select } from '@storybook/addon-knobs';
 
 import { Image } from './Image';
 

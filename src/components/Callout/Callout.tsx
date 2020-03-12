@@ -4,9 +4,9 @@ import React from 'react';
 import './_callout.scss';
 
 interface Props {
-  title?: string;
-  text?: string;
   intent?: 'primary' | 'danger';
+  text?: string;
+  title?: string;
 }
 
 /**

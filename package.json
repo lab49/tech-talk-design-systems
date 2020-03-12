@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook",
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ./src",
+    "storybook": "start-storybook",
+    "stylelint": "stylelint ./src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "types": "tsc --noEmit",
-    "stylelint": "stylelint ./src/**/*.scss"
+    "types": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/brianmcallister/lab49-tech-talk-design-systems#readme",
   "dependencies": {
     "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/addon-actions": "^5.3.14",
     "classnames": "^2.2.6",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
@@ -32,7 +33,6 @@
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
-    "@storybook/addon-actions": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/react": "^5.3.14",
     "@types/classnames": "^2.2.10",
