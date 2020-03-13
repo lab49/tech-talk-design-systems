@@ -1,0 +1,39 @@
+@import '../../../src/styles/base';
+
+.styleguide-colors {
+  display: flex;
+  flex-direction: column;
+
+  &__color {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  &__color-code {
+    font: 15px monospace;
+    margin: 0;
+  }
+
+  &__color-name {
+    @include type-style-new-york;
+
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  &__color-variable {
+    font: 15px monospace;
+    margin: 0;
+  }
+
+  @each $name, $value in $colors {
+    &__color--#{$name} {
+      background-color: $value;
+      color: if(lightness($value) > 0.5, black, white);
+    }
+  }
+}
