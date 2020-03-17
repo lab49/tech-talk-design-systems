@@ -1,7 +1,7 @@
 @import '../../styles/base';
 
 .button {
-  $default-box-shadow: 0 1px 2px 0 rgba(map-get($colors, sun), 0.2);
+  $default-box-shadow: map-get($box-shadows, van-gogh);
 
   @include type-style-new-york;
 
@@ -29,7 +29,7 @@
   }
 
   &:focus {
-    box-shadow: $default-box-shadow, inset 0 0 0 2px darken(map-get($colors, earth), 15%);
+    box-shadow: $default-box-shadow, inset 0 0 0 3px darken(map-get($colors, earth), 15%);
     outline: 0;
   }
 

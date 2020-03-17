@@ -1,0 +1,34 @@
+@import '../../../src/styles/base';
+
+.styleguide-box-shadows {
+  display: flex;
+  flex-direction: column;
+
+  &__box-shadow {
+    align-items: center;
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  &__box-shadow-name {
+    @include type-style-new-york;
+
+    margin: 0;
+    padding: 0 0 10px;
+  }
+
+  &__box-shadow-variable {
+    font: 15px monospace;
+    margin: 0;
+  }
+
+  @each $key, $value in $box-shadows {
+    &__box-shadow--#{$key} {
+      box-shadow: $value;
+    }
+  }
+}
