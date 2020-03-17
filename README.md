@@ -4,6 +4,10 @@ This is a companion repository to the tech talk titled: "Creating, using, and ma
 
 The purpose of this codebase is to illustrate what's possible when using Storybook to maintain a living style guide.
 
+There are a handful of React components that are in the `src/components` directory, and all of those components have Stories co-located with them. There are also other stories in the `stories` directory, that do not map 1:1 with components. These stories are style guide stories, and demonstrate globally available styles.
+
+Most components have Sass files co-located with them as well, but there are more global styles including mixins and variables in the `src/styles` directory.
+
 ## Getting started
 
 1. Clone this repository
