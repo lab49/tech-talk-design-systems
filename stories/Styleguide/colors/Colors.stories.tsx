@@ -1,8 +1,12 @@
-import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
 
 import './_colors.scss';
 
+/**
+ * Base CSS class.
+ * @private
+ */
 const baseClass = 'styleguide-colors';
 
 // eslint-disable-next-line import/no-default-export
@@ -11,6 +15,10 @@ export default {
   decorators: [withKnobs],
 };
 
+/**
+ * List of available color variables from the Sass environment.
+ * @private
+ */
 const colors = [
   { variable: 'sun', name: 'Sun', code: '#aaa' },
   { variable: 'mercury', name: 'Mercury', code: '#2684db' },
@@ -20,6 +28,9 @@ const colors = [
   { variable: 'jupiter', name: 'Jupiter', code: '#c9c9c9' },
 ];
 
+/**
+ * Default story component.
+ */
 export const Default = () => {
   return (
     <div className={baseClass}>

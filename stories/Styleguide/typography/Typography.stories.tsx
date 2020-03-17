@@ -1,8 +1,12 @@
-import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
+import React from 'react';
 
 import './_typography.scss';
 
+/**
+ * Base CSS class.
+ * @private
+ */
 const baseClass = 'styleguide-typography';
 
 // eslint-disable-next-line import/no-default-export
@@ -11,6 +15,9 @@ export default {
   decorators: [withKnobs],
 };
 
+/**
+ * Default story component.
+ */
 export const Default = () => {
   const atlantaText = text('Atlanta', 'All their equipment and instruments are alive.');
   const chicagoText = text('Chicago', 'A red flare silhouetted the jagged edge of a wing.');

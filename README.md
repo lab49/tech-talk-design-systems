@@ -22,6 +22,7 @@ The start script will start up Storybook locally.
 
 | Name | Purpose |
 | --- | --- |
+| `ci` | Run all tasks for a CI pipeline |
 | `lint` | Run eslint |
 | `start` | Start up Storybook |
 | `storybook` | Also starts up Storybook |

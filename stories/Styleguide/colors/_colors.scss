@@ -34,7 +34,7 @@
   @each $name, $value in $colors {
     &__color--#{$name} {
       background-color: $value;
-      color: if(lightness($value) > 0.5, black, white);
+      color: if(lightness($value) > 0.5, map-get($colors, sun), map-get($colors, venus));
     }
   }
 }
