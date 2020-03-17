@@ -16,6 +16,8 @@
   transition: 0.1s ease-in-out;
   transition-property: background-color, box-shadow;
   user-select: none;
+  white-space: nowrap;
+  // width: 200px;
 
   &:hover {
     background-color: darken(map-get($colors, earth), 5%);

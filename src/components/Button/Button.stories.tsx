@@ -10,7 +10,7 @@ export default {
 };
 
 export const Default = () => {
-  const buttonText = text('Text', 'Hello world!');
+  const buttonText = text('Text', "Hello world, I'm a button!");
   const block = boolean('Block', false);
   const size = select(
     'Size',
@@ -36,4 +36,12 @@ export const Default = () => {
       {buttonText}
     </Button>
   );
+};
+
+Default.story = {
+  parameters: {
+    knobs: {
+      escapeHTML: false,
+    },
+  },
 };

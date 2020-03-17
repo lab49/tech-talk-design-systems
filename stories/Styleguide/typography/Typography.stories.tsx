@@ -56,7 +56,7 @@ export const Default = () => {
       </div>
 
       <div className={`${baseClass}__type-style`}>
-      <header className={`${baseClass}__type-style-header`}>
+        <header className={`${baseClass}__type-style-header`}>
           <div className={`${baseClass}__type-style-name`}>San Francisco</div>
 
           <div className={`${baseClass}__type-style-code`}>@include type-style-san-francisco;</div>

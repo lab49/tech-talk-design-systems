@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ./src",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ./src ./stories",
     "start": "npm run storybook",
     "storybook": "start-storybook",
     "stylelint": "stylelint ./src/**/*.scss",

@@ -1,0 +1,23 @@
+@import '../../styles/base';
+
+.intro-card {
+  position: relative;
+
+  &__title {
+    @include type-style-chicago;
+
+    color: map-get($colors, earth);
+    margin-bottom: 10px;
+    text-shadow: 0 1px 2px rgba(map-get($colors, sun), 0.8);
+  }
+
+  &__content {
+    left: 0;
+    padding: 0 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
