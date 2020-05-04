@@ -3,7 +3,6 @@ import React from 'react';
 
 import { Callout } from './Callout';
 
-// eslint-disable-next-line import/no-default-export
 export default {
   title: 'Base Components | Callout',
   decorators: [withKnobs],

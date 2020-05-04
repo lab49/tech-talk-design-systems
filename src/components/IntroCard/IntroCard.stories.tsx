@@ -4,7 +4,6 @@ import React from 'react';
 
 import { IntroCard } from './IntroCard';
 
-// eslint-disable-next-line import/no-default-export
 export default {
   title: 'Composed Components | IntroCard',
   decorators: [withKnobs],

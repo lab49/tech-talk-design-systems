@@ -1,4 +1,6 @@
-@import '../../../src/styles/base';
+@use 'sass:meta';
+@use '../../../src/styles/variables/box-shadows';
+@use '../../../src/styles/base';
 
 .styleguide-box-shadows {
   display: flex;
@@ -15,7 +17,7 @@
   }
 
   &__box-shadow-name {
-    @include type-style-new-york;
+    @include base.typography-new-york;
 
     margin: 0;
     padding: 0 0 10px;
@@ -26,7 +28,7 @@
     margin: 0;
   }
 
-  @each $key, $value in $box-shadows {
+  @each $key, $value in meta.module-variables('box-shadows') {
     &__box-shadow--#{$key} {
       box-shadow: $value;
     }

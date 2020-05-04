@@ -37,4 +37,12 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 'off',
     'react/no-did-update-set-state': 'off',
   },
+  overrides: [
+    {
+      files: ['*.stories.tsx'],
+      rules: {
+        'import/no-default-export': 0
+      }
+    }
+  ]
 }

@@ -1,4 +1,6 @@
-@import '../../../src/styles/base';
+@use 'sass:meta';
+@use '../../../src/styles/variables/colors';
+@use '../../../src/styles/base';
 
 .styleguide-colors {
   display: flex;
@@ -20,7 +22,7 @@
   }
 
   &__color-name {
-    @include type-style-new-york;
+    @include base.typography-new-york;
 
     margin: 0;
     padding: 10px 0;
@@ -31,10 +33,10 @@
     margin: 0;
   }
 
-  @each $name, $value in $colors {
-    &__color--#{$name} {
+  @each $key, $value in meta.module-variables('colors') {
+    &__color--#{$key} {
       background-color: $value;
-      color: if(lightness($value) > 0.5, map-get($colors, sun), map-get($colors, venus));
+      color: if(lightness($value) > 0.5, base.$color-sun, base.$color-venus);
     }
   }
 }

@@ -1,14 +1,14 @@
-@import '../../styles/base';
+@use '../../styles/base';
 
 .intro-card {
   position: relative;
 
   &__title {
-    @include type-style-chicago;
+    @include base.typography-chicago;
 
-    color: map-get($colors, earth);
+    color: base.$color-earth;
     margin-bottom: 10px;
-    text-shadow: 0 1px 2px rgba(map-get($colors, sun), 0.8);
+    text-shadow: 0 1px 2px rgba(base.$color-sun, 0.8);
   }
 
   &__content {

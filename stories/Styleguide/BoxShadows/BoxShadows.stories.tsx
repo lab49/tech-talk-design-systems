@@ -9,12 +9,6 @@ import './_box-shadows.scss';
  */
 const baseClass = 'styleguide-box-shadows';
 
-// eslint-disable-next-line import/no-default-export
-export default {
-  title: 'Style guide|Box Shadows',
-  decorators: [withKnobs],
-};
-
 /**
  * List of available box shadows.
  * @private
@@ -25,6 +19,11 @@ const boxShadows = [
   { variable: 'picasso', name: 'Picasso' },
   { variable: 'da-vinci', name: 'Da Vinci' },
 ];
+
+export default {
+  title: 'Style guide|Box Shadows',
+  decorators: [withKnobs],
+};
 
 /**
  * Default story component.

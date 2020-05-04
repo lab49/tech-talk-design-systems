@@ -1,8 +1,6 @@
-@import './colors';
+@use './colors';
 
-$box-shadows: (
-  van-gogh: 0 1px 2px 0 rgba(map-get($colors, sun), 0.4),
-  monet: 0 2px 5px 1px rgba(map-get($colors, sun), 0.4),
-  picasso: 0 4px 8px 2px rgba(map-get($colors, sun), 0.4),
-  da-vinci: 0 5px 8px 5px rgba(map-get($colors, sun), 0.4),
-);
+$van-gogh: 0 1px 2px 0 rgba(colors.$sun, 0.4);
+$monet: 0 2px 5px 1px rgba(colors.$sun, 0.4);
+$picasso: 0 4px 8px 2px rgba(colors.$sun, 0.4);
+$da-vinci: 0 5px 8px 5px rgba(colors.$sun, 0.4);

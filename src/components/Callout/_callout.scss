@@ -1,41 +1,41 @@
-@import '../../styles/base';
+@use '../../styles/base';
 
 .callout {
   $this: &;
 
-  background-color: map-get($colors, earth);
+  background-color: base.$color-earth;
   border-radius: 5px;
   display: inline-block;
-  padding: 30px;
+  padding: 30px 30px 35px;
 
   &__title {
-    @include type-style-new-york;
+    @include base.typography-new-york;
 
     margin: 0 0 10px;
   }
 
   &__text {
-    @include type-style-san-francisco;
+    @include base.typography-san-francisco;
 
     margin: 0;
   }
 
   &--intent-primary {
-    background-color: lighten(map-get($colors, mercury), 45%);
+    background-color: lighten(base.$color-mercury, 45%);
 
     #{$this} {
       &__title {
-        color: map-get($colors, mercury);
+        color: base.$color-mercury;
       }
     }
   }
 
   &--intent-danger {
-    background-color: lighten(map-get($colors, mars), 40%);
+    background-color: lighten(base.$color-mars, 40%);
 
     #{$this} {
       &__title {
-        color: map-get($colors, mars);
+        color: base.$color-mars;
       }
     }
   }

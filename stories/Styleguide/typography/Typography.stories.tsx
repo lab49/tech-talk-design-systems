@@ -9,7 +9,6 @@ import './_typography.scss';
  */
 const baseClass = 'styleguide-typography';
 
-// eslint-disable-next-line import/no-default-export
 export default {
   title: 'Style guide|Typography',
   decorators: [withKnobs],

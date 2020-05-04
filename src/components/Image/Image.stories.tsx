@@ -3,7 +3,6 @@ import React from 'react';
 
 import { Image } from './Image';
 
-// eslint-disable-next-line import/no-default-export
 export default {
   title: 'Base Components | Image',
   decorators: [withKnobs],

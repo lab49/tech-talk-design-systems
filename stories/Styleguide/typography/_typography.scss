@@ -1,4 +1,4 @@
-@import '../../../src/styles/base';
+@use '../../../src/styles/base';
 
 .styleguide-typography {
   &__type-style {
@@ -31,19 +31,19 @@
     padding: 50px;
 
     &--atlanta {
-      @include type-style-atlanta;
+      @include base.typography-atlanta;
     }
 
     &--chicago {
-      @include type-style-chicago;
+      @include base.typography-chicago;
     }
 
     &--new-york {
-      @include type-style-new-york;
+      @include base.typography-new-york;
     }
 
     &--san-francisco {
-      @include type-style-san-francisco;
+      @include base.typography-san-francisco;
     }
   }
 }

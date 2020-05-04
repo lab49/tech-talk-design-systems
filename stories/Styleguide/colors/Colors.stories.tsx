@@ -9,12 +9,6 @@ import './_colors.scss';
  */
 const baseClass = 'styleguide-colors';
 
-// eslint-disable-next-line import/no-default-export
-export default {
-  title: 'Style guide|Colors',
-  decorators: [withKnobs],
-};
-
 /**
  * List of available color variables from the Sass environment.
  * @private
@@ -27,6 +21,11 @@ const colors = [
   { variable: 'mars', name: 'Mars', code: '#e65036' },
   { variable: 'jupiter', name: 'Jupiter', code: '#c9c9c9' },
 ];
+
+export default {
+  title: 'Style guide|Colors',
+  decorators: [withKnobs],
+};
 
 /**
  * Default story component.

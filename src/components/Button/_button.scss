@@ -1,15 +1,15 @@
-@import '../../styles/base';
+@use '../../styles/base';
 
 .button {
-  $default-box-shadow: map-get($box-shadows, van-gogh);
+  $default-box-shadow: base.$box-shadow-van-gogh;
 
-  @include type-style-new-york;
+  @include base.typography-new-york;
 
-  background-color: map-get($colors, earth);
+  background-color: base.$color-earth;
   border: 0;
   border-radius: 2px;
   box-shadow: $default-box-shadow;
-  color: map-get($colors, sun);
+  color: base.$color-sun;
   cursor: pointer;
   display: inline-block;
   padding: 10px 25px;
@@ -20,7 +20,7 @@
   // width: 200px;
 
   &:hover {
-    background-color: darken(map-get($colors, earth), 5%);
+    background-color: darken(base.$color-earth, 5%);
   }
 
   &:active {
@@ -29,7 +29,7 @@
   }
 
   &:focus {
-    box-shadow: $default-box-shadow, inset 0 0 0 3px darken(map-get($colors, earth), 15%);
+    box-shadow: $default-box-shadow, inset 0 0 0 3px darken(base.$color-earth, 15%);
     outline: 0;
   }
 
@@ -39,7 +39,7 @@
   }
 
   &--size-small {
-    @include type-style-san-francisco;
+    @include base.typography-san-francisco;
 
     padding: 5px 15px;
   }
@@ -49,29 +49,29 @@
   }
 
   &--intent-primary {
-    background-color: map-get($colors, mercury);
-    color: map-get($colors, venus);
+    background-color: base.$color-mercury;
+    color: base.$color-venus;
 
     &:hover {
-      background-color: darken(map-get($colors, mercury), 5%);
+      background-color: darken(base.$color-mercury, 5%);
     }
 
     &:focus {
-      box-shadow: $default-box-shadow, inset 0 0 0 2px darken(map-get($colors, mercury), 15%);
+      box-shadow: $default-box-shadow, inset 0 0 0 2px darken(base.$color-mercury, 15%);
       outline: 0;
     }
   }
 
   &--intent-danger {
-    background-color: map-get($colors, mars);
-    color: map-get($colors, venus);
+    background-color: base.$color-mars;
+    color: base.$color-venus;
 
     &:hover {
-      background-color: darken(map-get($colors, mars), 5%);
+      background-color: darken(base.$color-mars, 5%);
     }
 
     &:focus {
-      box-shadow: $default-box-shadow, inset 0 0 0 2px darken(map-get($colors, mars), 15%);
+      box-shadow: $default-box-shadow, inset 0 0 0 2px darken(base.$color-mars, 15%);
       outline: 0;
     }
   }

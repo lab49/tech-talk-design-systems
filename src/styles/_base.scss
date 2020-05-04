@@ -1,11 +1,5 @@
-@import
-  'global';
+@use 'global';
 
-@import
-  'variables/box-shadows',
-  'variables/colors';
-
-@import
-  'mixins/typography';
-
-
+@forward 'variables/box-shadows' as box-shadow-*;
+@forward 'variables/colors' as color-*;
+@forward 'mixins/typography' as typography-*;

@@ -4,7 +4,6 @@ import React from 'react';
 
 import { PhotoCard } from './PhotoCard';
 
-// eslint-disable-next-line import/no-default-export
 export default {
   title: 'Composed Components | PhotoCard',
   decorators: [withKnobs],
