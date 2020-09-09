@@ -1,7 +1,7 @@
 {
   "name": "lab49-tech-talk-design-systems",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lab49 TechTalk: Creating, Using, and Maintaining a Design System",
   "main": "index.js",
   "scripts": {
     "ci": "npm-run-all -p lint stylelint test types",
@@ -18,9 +18,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brianmcallister/lab49-tech-talk-design-systems/issues"
-  },
   "homepage": "https://github.com/brianmcallister/lab49-tech-talk-design-systems#readme",
   "dependencies": {
     "@storybook/addon-knobs": "^5.3.14",
