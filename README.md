@@ -4,7 +4,7 @@
 
 This is a companion repository to the [Lab49](https://www.lab49.com/) tech talk of the same name.
 
-There is a video recording of the talk on [YouTube](https://youtu.be/oCY90j3xCKI). Further discussion can be found at [LinkedIn](https://www.linkedin.com/posts/prakshoti-monica-pawar-she-her-1a840b_lab49-recently-hosted-a-tech-talk-by-our-activity-6672116340821688320-DmPs).
+There is a video recording of the talk on [YouTube](https://youtu.be/F2JifPQVdkw). Further discussion can be found at [LinkedIn](https://www.linkedin.com/posts/prakshoti-monica-pawar-she-her-1a840b_lab49-recently-hosted-a-tech-talk-by-our-activity-6672116340821688320-DmPs).
 
 ---
 
